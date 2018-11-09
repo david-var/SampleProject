@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsViewController" customModule="SampleProject" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLbl" destination="bbO-Cr-fJS" id="dPl-tb-LSG"/>
+                <outlet property="humidityLbl" destination="E8H-7z-Lpe" id="Erg-t7-OPU"/>
+                <outlet property="presureLbl" destination="ErG-k6-Ymc" id="IEf-tz-Ve5"/>
+                <outlet property="tempLbl" destination="1Ht-QG-6tW" id="YRg-bI-1oR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbO-Cr-fJS" userLabel="DateLbl">
+                    <rect key="frame" x="0.0" y="120" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ht-QG-6tW" userLabel="TempLbl">
+                    <rect key="frame" x="0.0" y="171" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humidity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8H-7z-Lpe" userLabel="humidityLbl">
+                    <rect key="frame" x="0.0" y="222" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-k6-Ymc" userLabel="pressureLbl">
+                    <rect key="frame" x="0.0" y="273" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Ht-QG-6tW" firstAttribute="top" secondItem="bbO-Cr-fJS" secondAttribute="bottom" constant="30" id="37M-G3-S5P"/>
+                <constraint firstItem="E8H-7z-Lpe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9GM-vB-rYC"/>
+                <constraint firstItem="ErG-k6-Ymc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AcA-yP-jky"/>
+                <constraint firstItem="E8H-7z-Lpe" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="COW-c3-DVh"/>
+                <constraint firstItem="ErG-k6-Ymc" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="N9T-1X-gfu"/>
+                <constraint firstItem="ErG-k6-Ymc" firstAttribute="top" secondItem="E8H-7z-Lpe" secondAttribute="bottom" constant="30" id="XrW-oV-VV1"/>
+                <constraint firstItem="bbO-Cr-fJS" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="g3r-ZR-T4n"/>
+                <constraint firstItem="1Ht-QG-6tW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="gbA-25-86h"/>
+                <constraint firstItem="E8H-7z-Lpe" firstAttribute="top" secondItem="1Ht-QG-6tW" secondAttribute="bottom" constant="30" id="hoj-9y-bfW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="bbO-Cr-fJS" secondAttribute="top" constant="-100" id="kSj-JD-7d3"/>
+                <constraint firstItem="bbO-Cr-fJS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tXU-Zh-sD8"/>
+                <constraint firstItem="1Ht-QG-6tW" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="ypN-eg-QMN"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="53.600000000000001" y="61.619190404797607"/>
+        </view>
+    </objects>
+</document>
